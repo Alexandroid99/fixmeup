@@ -8,6 +8,8 @@ echo Now, we scan the system files themselves and try to repair them. If this op
 echo you should consider doing a repair upgrade of Windows.
 echo (Running an upgrade that doesn't upgrade to a higher edition so your system files are renewed from a fresh source)
 pause
+DISM /Online /Cleanup-Image /ScanHealth
+DISM /Online /Cleanup-Image /RestoreHealth
 sfc /scannow
 echo Please note the outcome before we do the last step
 pause
