@@ -15,5 +15,5 @@ echo Please note the outcome before we do the last step
 pause
 chkdsk /f /r C:\
 Echo This scheduled a file system scan for the next system boot and will take a longer while.
-echo Let it take its time and complete without interruption.
+echo Let it take its time and complete without interruption. Reboot if prompted to.
 pause
